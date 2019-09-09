@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b6761366-0aae-4b4f-ba93-8a24d75111db}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>gatsby-config.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="renovate.json" />
+    <Content Include="CODE_OF_CONDUCT.md" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="README.md" />
+    <Content Include="gatsby-config.js" />
+    <Content Include="gatsby-node.js" />
+    <Content Include="lambda\hello.js" />
+    <Content Include="public\index.html" />
+    <Content Include="public\admin\index.html" />
+    <Content Include="public\admin\cms.js" />
+    <Content Include="public\img\apple-touch-icon.png" />
+    <Content Include="public\img\coffee-gear.png" />
+    <Content Include="public\img\coffee.png" />
+    <Content Include="public\img\favicon-16x16.png" />
+    <Content Include="public\img\favicon-32x32.png" />
+    <Content Include="public\img\meeting-space.png" />
+    <Content Include="public\img\tutorials.png" />
+    <Content Include="public\img\blog-index.jpg" />
+    <Content Include="public\img\chemex.jpg" />
+    <Content Include="public\img\flavor_wheel.jpg" />
+    <Content Include="public\img\home-jumbotron.jpg" />
+    <Content Include="public\img\jumbotron.jpg" />
+    <Content Include="public\img\og-image.jpg" />
+    <Content Include="public\img\products-full-width.jpg" />
+    <Content Include="public\img\products-grid1.jpg" />
+    <Content Include="public\img\products-grid2.jpg" />
+    <Content Include="public\img\products-grid3.jpg" />
+    <Content Include="public\img\safari-pinned-tab.svg" />
+    <Content Include="public\page-data\404\page-data.json" />
+    <Content Include="public\page-data\404.html\page-data.json" />
+    <Content Include="public\page-data\about\page-data.json" />
+    <Content Include="public\page-data\blog\page-data.json" />
+    <Content Include="public\page-data\contact\page-data.json" />
+    <Content Include="public\page-data\dev-404-page\page-data.json" />
+    <Content Include="public\page-data\index\page-data.json" />
+    <Content Include="public\page-data\products\page-data.json" />
+    <Content Include="public\page-data\tags\page-data.json" />
+    <Content Include="public\page-data\blog\2016-12-17-making-sense-of-the-scaas-new-flavor-wheel\page-data.json" />
+    <Content Include="public\page-data\blog\2017-01-04-a-beginners-guide-to-brewing-with-chemex\page-data.json" />
+    <Content Include="public\page-data\blog\2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week\page-data.json" />
+    <Content Include="public\page-data\contact\examples\page-data.json" />
+    <Content Include="public\page-data\contact\file-upload\page-data.json" />
+    <Content Include="public\page-data\contact\thanks\page-data.json" />
+    <Content Include="public\page-data\tags\brewing\page-data.json" />
+    <Content Include="public\page-data\tags\chemex\page-data.json" />
+    <Content Include="public\page-data\tags\flavor\page-data.json" />
+    <Content Include="public\page-data\tags\green-beans\page-data.json" />
+    <Content Include="public\page-data\tags\jamaica\page-data.json" />
+    <Content Include="public\page-data\tags\tasting\page-data.json" />
+    <Content Include="public\static\d\1877296825.json" />
+    <Content Include="public\static\d\3722544792.json" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\1f853\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\53d18\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\6a8a9\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\9cab2\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\ab422\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\bb41f\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\d3f3e\flavor_wheel.jpg" />
+    <Content Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\eb15c\flavor_wheel.jpg" />
+    <Content Include="public\static\277733984de58dd6d27eed18b510250d\32ef2\coffee.png" />
+    <Content Include="public\static\277733984de58dd6d27eed18b510250d\7b81b\coffee.png" />
+    <Content Include="public\static\277733984de58dd6d27eed18b510250d\8a223\coffee.png" />
+    <Content Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\1511b\products-grid1.jpg" />
+    <Content Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\57d19\products-grid1.jpg" />
+    <Content Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\61788\products-grid1.jpg" />
+    <Content Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\79e64\products-grid1.jpg" />
+    <Content Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\b1729\products-grid1.jpg" />
+    <Content Include="public\static\534958a2cee3bb524a0bae118f2a4219\0979f\home-jumbotron.jpg" />
+    <Content Include="public\static\534958a2cee3bb524a0bae118f2a4219\60272\home-jumbotron.jpg" />
+    <Content Include="public\static\534958a2cee3bb524a0bae118f2a4219\6a8a9\home-jumbotron.jpg" />
+    <Content Include="public\static\7de80b5f57f779d116b3a186b9a9268e\32ef2\tutorials.png" />
+    <Content Include="public\static\7de80b5f57f779d116b3a186b9a9268e\7b81b\tutorials.png" />
+    <Content Include="public\static\7de80b5f57f779d116b3a186b9a9268e\8a223\tutorials.png" />
+    <Content Include="public\static\85357520b02403983a231bb940d46f8c\1969c\products-full-width.jpg" />
+    <Content Include="public\static\85357520b02403983a231bb940d46f8c\60272\products-full-width.jpg" />
+    <Content Include="public\static\85357520b02403983a231bb940d46f8c\6a8a9\products-full-width.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\0d1ff\products-grid3.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\a9491\products-grid3.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\b89ef\products-grid3.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\bb750\products-grid3.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\bbd90\products-grid3.jpg" />
+    <Content Include="public\static\95424a081ffe82635d22b755ce7ec986\e95fe\products-grid3.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\0d1ff\products-grid2.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\a9491\products-grid2.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\b89ef\products-grid2.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\bb750\products-grid2.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\bbd90\products-grid2.jpg" />
+    <Content Include="public\static\9827e8b51453c398abd7cc9d8f12217f\e95fe\products-grid2.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\0979f\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\1f853\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\53d18\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\9cab2\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\ab422\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\bb41f\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\d3f3e\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\eb15c\chemex.jpg" />
+    <Content Include="public\static\ad53658d229612b8d23d0307be253419\fb329\chemex.jpg" />
+    <Content Include="public\static\c909be3f6ff771026adf0438c181f4d5\0979f\jumbotron.jpg" />
+    <Content Include="public\static\c909be3f6ff771026adf0438c181f4d5\60272\jumbotron.jpg" />
+    <Content Include="public\static\c909be3f6ff771026adf0438c181f4d5\6a8a9\jumbotron.jpg" />
+    <Content Include="public\static\d2f97849ad334b9280651604a80a01a6\32ef2\meeting-space.png" />
+    <Content Include="public\static\d2f97849ad334b9280651604a80a01a6\7b81b\meeting-space.png" />
+    <Content Include="public\static\d2f97849ad334b9280651604a80a01a6\8a223\meeting-space.png" />
+    <Content Include="public\static\ec437153a2bd67b99cd975bf10c03292\32ef2\coffee-gear.png" />
+    <Content Include="public\static\ec437153a2bd67b99cd975bf10c03292\7b81b\coffee-gear.png" />
+    <Content Include="public\static\ec437153a2bd67b99cd975bf10c03292\8a223\coffee-gear.png" />
+    <Content Include="src\cms\cms.js" />
+    <Content Include="src\components\BlogRoll.js" />
+    <Content Include="src\components\Content.js" />
+    <Content Include="src\components\Features.js" />
+    <Content Include="src\components\Footer.js" />
+    <Content Include="src\components\Layout.js" />
+    <Content Include="src\components\Navbar.js" />
+    <Content Include="src\components\PreviewCompatibleImage.js" />
+    <Content Include="src\components\Pricing.js" />
+    <Content Include="src\components\SiteMetadata.js" />
+    <Content Include="src\components\Testimonials.js" />
+    <Content Include="src\img\github-icon.svg" />
+    <Content Include="src\img\logo.svg" />
+    <Content Include="src\lambda\hello.js" />
+    <Content Include="src\pages\index.md" />
+    <Content Include="src\pages\404.js" />
+    <Content Include="src\templates\about-page.js" />
+    <Content Include="src\templates\blog-post.js" />
+    <Content Include="src\templates\index-page.js" />
+    <Content Include="src\templates\product-page.js" />
+    <Content Include="src\templates\tags.js" />
+    <Content Include="src\cms\preview-templates\AboutPagePreview.js" />
+    <Content Include="src\cms\preview-templates\BlogPostPreview.js" />
+    <Content Include="src\cms\preview-templates\IndexPagePreview.js" />
+    <Content Include="src\cms\preview-templates\ProductPagePreview.js" />
+    <Content Include="src\img\social\facebook.svg" />
+    <Content Include="src\img\social\instagram.svg" />
+    <Content Include="src\img\social\twitter.svg" />
+    <Content Include="src\img\social\vimeo.svg" />
+    <Content Include="src\pages\about\index.md" />
+    <Content Include="src\pages\blog\2016-12-17-making-sense-of-the-scaas-new-flavor-wheel.md" />
+    <Content Include="src\pages\blog\2017-01-04-a-beginners-guide-to-brewing-with-chemex.md" />
+    <Content Include="src\pages\blog\2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week.md" />
+    <Content Include="src\pages\blog\index.js" />
+    <Content Include="src\pages\contact\examples.js" />
+    <Content Include="src\pages\contact\file-upload.js" />
+    <Content Include="src\pages\contact\index.js" />
+    <Content Include="src\pages\contact\thanks.js" />
+    <Content Include="src\pages\products\index.md" />
+    <Content Include="src\pages\tags\index.js" />
+    <Content Include="static\img\apple-touch-icon.png" />
+    <Content Include="static\img\coffee-gear.png" />
+    <Content Include="static\img\coffee.png" />
+    <Content Include="static\img\favicon-16x16.png" />
+    <Content Include="static\img\favicon-32x32.png" />
+    <Content Include="static\img\meeting-space.png" />
+    <Content Include="static\img\tutorials.png" />
+    <Content Include="static\img\blog-index.jpg" />
+    <Content Include="static\img\chemex.jpg" />
+    <Content Include="static\img\flavor_wheel.jpg" />
+    <Content Include="static\img\home-jumbotron.jpg" />
+    <Content Include="static\img\jumbotron.jpg" />
+    <Content Include="static\img\og-image.jpg" />
+    <Content Include="static\img\products-full-width.jpg" />
+    <Content Include="static\img\products-grid1.jpg" />
+    <Content Include="static\img\products-grid2.jpg" />
+    <Content Include="static\img\products-grid3.jpg" />
+    <Content Include="static\img\safari-pinned-tab.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lambda" />
+    <Folder Include="Niffster" />
+    <Folder Include="Niffster\Niffster" />
+    <Folder Include="public" />
+    <Folder Include="public\admin" />
+    <Folder Include="public\img" />
+    <Folder Include="public\page-data" />
+    <Folder Include="public\page-data\404" />
+    <Folder Include="public\page-data\404.html" />
+    <Folder Include="public\page-data\about" />
+    <Folder Include="public\page-data\blog" />
+    <Folder Include="public\page-data\blog\2016-12-17-making-sense-of-the-scaas-new-flavor-wheel" />
+    <Folder Include="public\page-data\blog\2017-01-04-a-beginners-guide-to-brewing-with-chemex" />
+    <Folder Include="public\page-data\blog\2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week" />
+    <Folder Include="public\page-data\contact" />
+    <Folder Include="public\page-data\contact\examples" />
+    <Folder Include="public\page-data\contact\file-upload" />
+    <Folder Include="public\page-data\contact\thanks" />
+    <Folder Include="public\page-data\dev-404-page" />
+    <Folder Include="public\page-data\index" />
+    <Folder Include="public\page-data\products" />
+    <Folder Include="public\page-data\tags" />
+    <Folder Include="public\page-data\tags\brewing" />
+    <Folder Include="public\page-data\tags\chemex" />
+    <Folder Include="public\page-data\tags\flavor" />
+    <Folder Include="public\page-data\tags\green-beans" />
+    <Folder Include="public\page-data\tags\jamaica" />
+    <Folder Include="public\page-data\tags\tasting" />
+    <Folder Include="public\static" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\1f853" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\53d18" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\6a8a9" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\9cab2" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\ab422" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\bb41f" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\d3f3e" />
+    <Folder Include="public\static\19a6d5ab24bbc3b3531f11ecab349683\eb15c" />
+    <Folder Include="public\static\277733984de58dd6d27eed18b510250d" />
+    <Folder Include="public\static\277733984de58dd6d27eed18b510250d\32ef2" />
+    <Folder Include="public\static\277733984de58dd6d27eed18b510250d\7b81b" />
+    <Folder Include="public\static\277733984de58dd6d27eed18b510250d\8a223" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\1511b" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\57d19" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\61788" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\79e64" />
+    <Folder Include="public\static\4d06c3734be9ff5220b79ddf8e62eed9\b1729" />
+    <Folder Include="public\static\534958a2cee3bb524a0bae118f2a4219" />
+    <Folder Include="public\static\534958a2cee3bb524a0bae118f2a4219\0979f" />
+    <Folder Include="public\static\534958a2cee3bb524a0bae118f2a4219\60272" />
+    <Folder Include="public\static\534958a2cee3bb524a0bae118f2a4219\6a8a9" />
+    <Folder Include="public\static\7de80b5f57f779d116b3a186b9a9268e" />
+    <Folder Include="public\static\7de80b5f57f779d116b3a186b9a9268e\32ef2" />
+    <Folder Include="public\static\7de80b5f57f779d116b3a186b9a9268e\7b81b" />
+    <Folder Include="public\static\7de80b5f57f779d116b3a186b9a9268e\8a223" />
+    <Folder Include="public\static\85357520b02403983a231bb940d46f8c" />
+    <Folder Include="public\static\85357520b02403983a231bb940d46f8c\1969c" />
+    <Folder Include="public\static\85357520b02403983a231bb940d46f8c\60272" />
+    <Folder Include="public\static\85357520b02403983a231bb940d46f8c\6a8a9" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\0d1ff" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\a9491" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\b89ef" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\bb750" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\bbd90" />
+    <Folder Include="public\static\95424a081ffe82635d22b755ce7ec986\e95fe" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\0d1ff" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\a9491" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\b89ef" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\bb750" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\bbd90" />
+    <Folder Include="public\static\9827e8b51453c398abd7cc9d8f12217f\e95fe" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\0979f" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\1f853" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\53d18" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\9cab2" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\ab422" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\bb41f" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\d3f3e" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\eb15c" />
+    <Folder Include="public\static\ad53658d229612b8d23d0307be253419\fb329" />
+    <Folder Include="public\static\c909be3f6ff771026adf0438c181f4d5" />
+    <Folder Include="public\static\c909be3f6ff771026adf0438c181f4d5\0979f" />
+    <Folder Include="public\static\c909be3f6ff771026adf0438c181f4d5\60272" />
+    <Folder Include="public\static\c909be3f6ff771026adf0438c181f4d5\6a8a9" />
+    <Folder Include="public\static\d" />
+    <Folder Include="public\static\d2f97849ad334b9280651604a80a01a6" />
+    <Folder Include="public\static\d2f97849ad334b9280651604a80a01a6\32ef2" />
+    <Folder Include="public\static\d2f97849ad334b9280651604a80a01a6\7b81b" />
+    <Folder Include="public\static\d2f97849ad334b9280651604a80a01a6\8a223" />
+    <Folder Include="public\static\ec437153a2bd67b99cd975bf10c03292" />
+    <Folder Include="public\static\ec437153a2bd67b99cd975bf10c03292\32ef2" />
+    <Folder Include="public\static\ec437153a2bd67b99cd975bf10c03292\7b81b" />
+    <Folder Include="public\static\ec437153a2bd67b99cd975bf10c03292\8a223" />
+    <Folder Include="src" />
+    <Folder Include="src\cms" />
+    <Folder Include="src\cms\preview-templates" />
+    <Folder Include="src\components" />
+    <Folder Include="src\img" />
+    <Folder Include="src\img\social" />
+    <Folder Include="src\lambda" />
+    <Folder Include="src\pages" />
+    <Folder Include="src\pages\about" />
+    <Folder Include="src\pages\blog" />
+    <Folder Include="src\pages\contact" />
+    <Folder Include="src\pages\products" />
+    <Folder Include="src\pages\tags" />
+    <Folder Include="src\templates" />
+    <Folder Include="static" />
+    <Folder Include="static\admin" />
+    <Folder Include="static\img" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
