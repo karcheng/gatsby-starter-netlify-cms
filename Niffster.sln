@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Niffster", "Niffster.njsproj", "{B6761366-0AAE-4B4F-BA93-8A24D75111DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6761366-0AAE-4B4F-BA93-8A24D75111DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6761366-0AAE-4B4F-BA93-8A24D75111DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6761366-0AAE-4B4F-BA93-8A24D75111DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6761366-0AAE-4B4F-BA93-8A24D75111DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3CE02A1-A72F-49CE-82DF-7784BE928506}
+	EndGlobalSection
+EndGlobal
